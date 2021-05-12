@@ -4,7 +4,7 @@ import styled from "styled-components";
 const CardWrapper = styled.div`
     position: relative;
     height: 11em;
-    width: 8em;
+    width: 7.3em;
     cursor: none;
     user-select: none;
 `;

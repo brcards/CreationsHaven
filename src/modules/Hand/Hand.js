@@ -45,13 +45,16 @@ const cards = [
     {
         "title": "test"
     },
+    {
+        "title": "test"
+    }
 ];
 
 const Hand = () => {
     return (
         <HandContainer>
             {cards.map((card, index) =>
-                <PlayerCard index={index} handSize={cards.length}/>
+                <PlayerCard key={index} index={index} handSize={cards.length}/>
             )}
         </HandContainer>
     );

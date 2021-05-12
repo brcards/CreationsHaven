@@ -1,7 +1,5 @@
 import React from 'react';
-import styled, {css} from "styled-components";
-import Layers from "/src/engine/Layers";
-import PlayerCardStates from "/src/modules/PlayerCard/PlayerCardStates";
+import styled from "styled-components";
 
 /**
  * Get the y translation based on the position of the card in
@@ -40,7 +38,7 @@ const StyledCardFace = styled.div`
     top: 0;
     pointer-events: none;
     transform: translateY(${props => getCardTranslation(props.index, props.handSize)}px) 
-               rotate(${props => getCardRotation(props.index, props.handSize, props.maxCards)}deg);
+               rotate3d(0, 0, 1, ${props => getCardRotation(props.index, props.handSize, props.maxCards)}deg);
 `;
 
 const CardFace = ({children, index, handSize, maxCards, cardState, ...rest }) => {

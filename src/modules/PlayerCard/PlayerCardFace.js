@@ -9,16 +9,12 @@ const CardFaceIdleCss = css`
 `;
 
 const CardFaceHoverCss = css`
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4), 
-                inset 0 0 0 2px rgba(255, 153, 153, 0.75);
-    transform: translateY(-8em) rotate(0deg) scale(2);
+    transform: translateY(-9em) rotate(0deg) scale(2);
     transition-duration: 0ms;
     z-index: ${Layers.action.zIndex};
 `;
 
 const CardFaceDragCss = css`
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4), 
-                inset 0 0 0 2px rgba(255, 153, 153, 0.75);
     transform: rotate(0deg) scale(1.5);
     transition-duration: 0ms;
     z-index: ${Layers.action.zIndex};
