@@ -5,6 +5,8 @@ import {FlexCenter} from "/src/common/styles/Stylings";
 
 const GlobalStyle = createGlobalStyle`
     body {
+        //left 14px, right 16px
+        font-size: 13px;
         transform-style: preserve-3d;
         perspective: 1000;
         background: radial-gradient(#333333, #111111);

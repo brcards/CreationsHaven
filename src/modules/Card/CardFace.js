@@ -10,8 +10,8 @@ import styled from "styled-components";
  * @returns {number}
  */
 const getCardTranslation = (index, count) => {
+    let dropoff = 1.5;
     // non linear so it's rounded
-    let dropoff = 3;
     return Math.pow(Math.abs(index - count/2), 2) * dropoff;
 };
 
@@ -41,6 +41,9 @@ const StyledCardFace = styled.div`
                rotate3d(0, 0, 1, ${props => getCardRotation(props.index, props.handSize, props.maxCards)}deg);
 `;
 
+/**
+ * Provides f
+ */
 const CardFace = ({children, index, handSize, maxCards, cardState, ...rest }) => {
     return (
         <StyledCardFace index={index}

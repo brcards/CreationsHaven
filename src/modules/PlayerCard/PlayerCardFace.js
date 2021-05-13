@@ -9,7 +9,7 @@ const CardFaceIdleCss = css`
 `;
 
 const CardFaceHoverCss = css`
-    transform: translateY(-9em) rotate(0deg) scale(2);
+    transform: translateY(-10em) rotate(0deg) scale(2);
     transition-duration: 0ms;
     z-index: ${Layers.action.zIndex};
 `;

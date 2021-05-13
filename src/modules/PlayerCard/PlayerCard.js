@@ -10,6 +10,7 @@ import CardText from "/src/modules/Card/CardText";
 import CardAttack from "/src/modules/Card/CardAttack";
 import CardHealth from "/src/modules/Card/CardHealth";
 import CardImage from "/src/modules/Card/CardImage";
+import CardTitle from "/src/modules/Card/CardTitle";
 
 
 /**
@@ -54,8 +55,9 @@ const PlayerCard = ({cardData, children, index, handSize, maxCards = 10, ...rest
                         <CardBackground>
                             <CardCost>3</CardCost>
                             <CardImage src={CardSrc} />
+                            <CardTitle>Predators Focus</CardTitle>
                             <CardText>
-                                "Double a minions attack this turn"
+                                Double a minions attack this turn
                             </CardText>
                             <CardAttack>4</CardAttack>
                             <CardHealth>5</CardHealth>
