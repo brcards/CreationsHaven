@@ -1,11 +1,10 @@
 import React from 'react';
 import 'normalize.css';
 import {createGlobalStyle} from "styled-components";
-import {FlexCenter} from "/src/common/styles/Stylings";
+import {FlexCenter} from "src/common/Stylings";
 
 const GlobalStyle = createGlobalStyle`
     body {
-        //left 14px, right 16px
         font-size: 13px;
         transform-style: preserve-3d;
         perspective: 1000;

@@ -1,9 +1,14 @@
 import React from 'react';
 import styled from "styled-components";
 
+/**
+ * height: 60em;
+ * width: 92em;
+ */
 const Background = styled.div`
-    height: 55em;
-    width: 90em;
+    position: relative;
+    height: 60em;
+    width: 92em;
     background: grey;
 `;
 

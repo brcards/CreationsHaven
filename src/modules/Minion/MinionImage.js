@@ -3,10 +3,8 @@ import styled from "styled-components";
 
 const Image = styled.div`
     position: absolute;
-    height: 80%;
-    width: 90%;
-    left: 5%;
-    top: -15.0%;
+    height: 100%;
+    width: 100%;
     border-radius: 50%;
     border: 1px solid #111111;
     box-shadow: 0 0 5px #000000,
@@ -30,7 +28,7 @@ const Art = styled.img`
     height: 100%;
 `;
 
-const CardImage = ({src, ...rest}) => {
+const MinionImage = ({src, ...rest}) => {
     return (
         <Image {...rest} draggable="false">
             <Art src={src} />
@@ -39,4 +37,4 @@ const CardImage = ({src, ...rest}) => {
     );
 };
 
-export default CardImage;
+export default MinionImage;

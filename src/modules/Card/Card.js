@@ -2,7 +2,6 @@ import React from 'react';
 import styled from "styled-components";
 
 const CardWrapper = styled.div`
-    
     position: relative;
     height: 10em;
     width: 7.3em;

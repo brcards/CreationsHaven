@@ -1,6 +1,5 @@
-import React, {useState} from 'react';
+import React from 'react';
 import styled from "styled-components";
-import PlayerCard from "/src/modules/PlayerCard/PlayerCard";
 
 const HandContainer = styled.div`
     position: fixed;
@@ -11,53 +10,17 @@ const HandContainer = styled.div`
     right: 0;
     height: 8em;
     padding: 0 5em;
+    font-size: 1.2em;
     > * {
         // determines how close together the cards are
        margin: 0 -2.0em;
     }
 `;
 
-const Hand = () => {
-    const [cards, setCards] = React.useState(
-        [
-            {
-                "title": "test"
-            },
-            {
-                "title": "test"
-            },
-            {
-                "title": "test"
-            },
-            {
-                "title": "test"
-            },
-            {
-                "title": "test"
-            },
-            {
-                "title": "test"
-            },
-            {
-                "title": "test"
-            },
-            {
-                "title": "test"
-            },
-            {
-                "title": "test"
-            },
-            {
-                "title": "test"
-            }
-        ]
-    );
-
+const Hand = ({children}) => {
     return (
         <HandContainer>
-            {cards.map((card, index) =>
-                <PlayerCard key={index} index={index} handSize={cards.length}/>
-            )}
+            {children}
         </HandContainer>
     );
 };

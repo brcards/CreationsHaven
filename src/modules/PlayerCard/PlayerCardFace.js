@@ -1,8 +1,8 @@
 import React from 'react';
 import styled, {css} from "styled-components";
-import PlayerCardStates from "/src/modules/PlayerCard/PlayerCardStates";
-import CardFace from "/src/modules/Card/CardFace";
-import Layers from "/src/engine/Layers";
+import PlayerCardStates from "src/modules/PlayerCard/PlayerCardStates";
+import CardFace from "src/modules/Card/CardFace";
+import Layers from "src/engine/Layers";
 
 const CardFaceIdleCss = css`
     z-index: ${Layers.hands.zIndex};
@@ -15,7 +15,7 @@ const CardFaceHoverCss = css`
 `;
 
 const CardFaceDragCss = css`
-    transform: rotate(0deg) scale(1.5);
+    transform: rotate(0deg) scale(1.2);
     transition-duration: 0ms;
     z-index: ${Layers.action.zIndex};
 `;

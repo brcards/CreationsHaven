@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {FlexCenter} from "/src/common/styles/Stylings";
+import {FlexCenter} from "src/common/Stylings";
 
 const CardText = styled.div`
     position: absolute;
@@ -7,7 +7,7 @@ const CardText = styled.div`
     height: 40%;
     width: 95%;
     left: 1.2%;
-    bottom: 2.0%;
+    bottom: 1.0%;
     background: #D6CCA9;
     border: 1px solid #111111;
     border-radius: 1px;

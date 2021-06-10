@@ -1,11 +1,10 @@
-import React from 'react';
-import styled from "styled-components";
-import {FlexCenter} from "/src/common/styles/Stylings";
+import {css} from "styled-components";
+import {FlexCenter} from "src/common/Stylings";
 
-const CardAttribute = styled.div`
+const CardAttribute = css`
     font-size: 1.1em;
     color: #FFFFFF;
-    z-index: 3;
+    z-index: 6;
     ${FlexCenter}
 `;
 
