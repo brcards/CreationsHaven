@@ -1,28 +1,18 @@
 import React from 'react';
 import styled from "styled-components";
-import PlayerBoardCardSpot from "src/modules/PlayerBoard/PlayerBoardCardSpot";
-import Minion from "src/modules/Minion/Minion";
+import Board from "src/modules/Board";
 
-const Background = styled.div`
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-    height: 26%;
-    background-color: #DDDDDD;
-    position: relative;
+const StyleBoardSide = styled(Board)`
+    position: absolute;
     left: 5%;
     top: 52%;
 `;
 
-const PlayerBoard = ({cardSpots}) => {
+const PlayerBoard = ({children, ...rest}) => {
     return (
-        <Background>
-            {cardSpots.map((cardSpot, index) =>
-                <PlayerBoardCardSpot ref={cardSpot.ref} key={index}>
-                    {cardSpot.card.id !== undefined ? <Minion /> : '' }
-                </PlayerBoardCardSpot>
-            )}
-        </Background>
+        <StyleBoardSide {...rest}>
+            {children}
+        </StyleBoardSide>
     );
 };
 

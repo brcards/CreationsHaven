@@ -1,10 +1,18 @@
 import React from 'react';
+import styled from "styled-components";
+import Board from "src/modules/Board";
 
-const OpponentBoard = () => {
+const StyleBoardSide = styled(Board)`
+    position: absolute;
+    left: 5%;
+    top: 23%;
+`;
+
+const OpponentBoard = ({children, ...rest}) => {
     return (
-        <div>
-
-        </div>
+        <StyleBoardSide {...rest}>
+            {children}
+        </StyleBoardSide>
     );
 };
 

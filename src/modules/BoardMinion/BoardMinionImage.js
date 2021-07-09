@@ -11,6 +11,12 @@ const Image = styled.div`
                 inset 0 0 20px 5px #000000,;
     overflow: hidden;
     z-index: 2;
+    
+    // TODO should be in a "PlayerBoardMinion"
+    transition: all .2s ease-in-out;
+    &:hover {
+        box-shadow: 0px 0px 10px yellow;
+    }
 `;
 
 const ImageShadow = styled.div`
@@ -28,7 +34,7 @@ const Art = styled.img`
     height: 100%;
 `;
 
-const MinionImage = ({src, ...rest}) => {
+const BoardMinionImage = ({src, ...rest}) => {
     return (
         <Image {...rest} draggable="false">
             <Art src={src} />
@@ -37,4 +43,4 @@ const MinionImage = ({src, ...rest}) => {
     );
 };
 
-export default MinionImage;
+export default BoardMinionImage;

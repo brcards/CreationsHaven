@@ -2,6 +2,8 @@ import React from 'react';
 import 'normalize.css';
 import {createGlobalStyle} from "styled-components";
 import {FlexCenter} from "src/common/Stylings";
+import { Provider } from 'react-redux'
+import store from "src/store";
 
 const GlobalStyle = createGlobalStyle`
     body {
@@ -19,8 +21,10 @@ const GlobalStyle = createGlobalStyle`
 const Application = ({children}) => {
     return (
         <div>
-            <GlobalStyle />
-            {children}
+            <Provider store={store}>
+                <GlobalStyle />
+                {children}
+            </Provider>
         </div>
     );
 };

@@ -1,27 +1,23 @@
 import React from 'react';
 import styled from "styled-components";
 
-const HandContainer = styled.div`
-    position: fixed;
+const StyledHand = styled.div`
     justify-content: center;
     display: flex;
-    bottom: 0;
-    left: 0;
-    right: 0;
     height: 8em;
     padding: 0 5em;
-    font-size: 1.2em;
+    font-size: 1.3em;
     > * {
         // determines how close together the cards are
        margin: 0 -2.0em;
-    }
+    };
 `;
 
-const Hand = ({children}) => {
+const Hand = ({children, ...rest}) => {
     return (
-        <HandContainer>
+        <StyledHand {...rest}>
             {children}
-        </HandContainer>
+        </StyledHand>
     );
 };
 

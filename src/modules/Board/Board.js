@@ -1,15 +1,12 @@
 import React from 'react';
 import styled from "styled-components";
 
-/**
- * height: 60em;
- * width: 92em;
- */
 const Background = styled.div`
-    position: relative;
-    height: 60em;
-    width: 92em;
-    background: grey;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 26%;
+    background-color: #DDDDDD;
 `;
 
 const Board = ({children, ...rest}) => {
@@ -19,6 +16,5 @@ const Board = ({children, ...rest}) => {
         </Background>
     );
 };
-
 
 export default Board;

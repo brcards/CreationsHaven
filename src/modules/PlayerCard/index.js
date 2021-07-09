@@ -1,3 +1,3 @@
-import PlayerCard from "src/modules/PlayerCard/PlayerCardFace";
+import PlayerCard from "src/modules/PlayerCard/PlayerCardInHand";
 
 export default PlayerCard;

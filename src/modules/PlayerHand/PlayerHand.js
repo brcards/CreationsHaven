@@ -1,17 +1,19 @@
 import React from 'react';
 import Hand from "src/modules/Hand";
-import PlayerCard from "src/modules/PlayerCard/PlayerCard";
+import styled from "styled-components";
 
-const PlayerHand = ({cardsInHand, onRelease}) => {
+const StyledHand = styled(Hand)`
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+`;
+
+const PlayerHand = ({children, ...rest}) => {
     return (
-        <Hand>
-            {cardsInHand.map((card, index) =>
-                <PlayerCard key={card.id}
-                            index={index}
-                            handSize={cardsInHand.length}
-                            onRelease={onRelease}/>
-            )}
-        </Hand>
+        <StyledHand {...rest}>
+            {children}
+        </StyledHand>
     );
 };
 

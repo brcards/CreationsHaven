@@ -30,7 +30,7 @@ const getCardRotation = (index, count, max) => {
     return -angle + (index + (max - count)/2) * offset;
 };
 
-const StyledCardFace = styled.div`
+const StyledCard = styled.div`
     position: absolute;
     bottom: 0;
     left: 0;
@@ -44,16 +44,16 @@ const StyledCardFace = styled.div`
 /**
  * Provides f
  */
-const CardFace = ({children, index, handSize, maxCards, cardState, ...rest }) => {
+const CardInHand = ({children, index, handSize, maxCards, cardState, ...rest }) => {
     return (
-        <StyledCardFace index={index}
+        <StyledCard index={index}
                         handSize={handSize}
                         maxCards={maxCards}
                         cardState={cardState}
                         {...rest}>
             {children}
-        </StyledCardFace>
+        </StyledCard>
     );
 };
 
-export default CardFace;
+export default CardInHand;
