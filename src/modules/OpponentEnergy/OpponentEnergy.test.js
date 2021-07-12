@@ -1,7 +1,7 @@
 import React from "react"
 import '@testing-library/jest-dom'
 
-describe("PlayerEnergyOrb", () => {
+describe("OpponentEnergy", () => {
     it('', () => {
 
     });

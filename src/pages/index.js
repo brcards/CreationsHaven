@@ -6,26 +6,28 @@ import PlayerBoardContainer from "src/modules/PlayerBoard/PlayerBoardContainer";
 import OpponentHandContainer from "src/modules/OpponentHand/OpponentHandContainer";
 import {OpponentBoardContainer} from "src/modules/OpponentBoard";
 import PlayerHealthOrb from "src/modules/PlayerHealthOrb";
-import PlayerEnergyOrb from "src/modules/PlayerEnergyOrb";
 import OpponentHealthOrb from "src/modules/OpponentHealthOrb";
-import OpponentEnergyOrb from "src/modules/OpponentEnergyOrb";
+import GamePlayBackground from "src/modules/GamePlayBackground";
+import PlayerEnergy from "src/modules/PlayerEnergy";
+import OpponentEnergy from "src/modules/OpponentEnergy";
 
 const Main = styled.main`
-    font-size: 14px;
 `;
 
 // markup
 const IndexPage = () => {
     return (
         <Main>
+            <GamePlayBackground />
             <OpponentHandContainer />
             <GameBoard>
                 <OpponentBoardContainer />
                 <OpponentHealthOrb />
-                <OpponentEnergyOrb />
+                <OpponentEnergy />
+
                 <PlayerBoardContainer />
                 <PlayerHealthOrb />
-                <PlayerEnergyOrb />
+                <PlayerEnergy />
             </GameBoard>
             <PlayerHandContainer />
         </Main>

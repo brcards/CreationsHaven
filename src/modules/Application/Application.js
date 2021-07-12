@@ -4,6 +4,7 @@ import {createGlobalStyle} from "styled-components";
 import {FlexCenter} from "src/common/Stylings";
 import { Provider } from 'react-redux'
 import store from "src/store";
+import GamePlayBackground from "src/modules/GamePlayBackground";
 
 const GlobalStyle = createGlobalStyle`
     body {
@@ -15,6 +16,26 @@ const GlobalStyle = createGlobalStyle`
         width: 100vw;
         height: 100vh;
         ${FlexCenter}
+    }
+    @media screen and (min-width: 600px) {
+        body {
+            font-size: 8px;    
+        }
+    }
+    @media screen and (min-width: 960px) {
+        body {
+            font-size: 10px;    
+        }
+    }
+    @media screen and (min-width: 1280px) {
+        body {
+            font-size: 12px;    
+        }
+    }
+    @media screen and (min-width: 1920px) {
+        body {
+            font-size: 15px;    
+        }
     }
 `;
 

@@ -6,7 +6,6 @@ const Background = styled.div`
     justify-content: space-between;
     width: 90%;
     height: 26%;
-    background-color: #DDDDDD;
 `;
 
 const Board = ({children, ...rest}) => {

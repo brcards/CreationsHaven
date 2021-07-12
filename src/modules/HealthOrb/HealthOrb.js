@@ -3,7 +3,7 @@ import Orb from "src/modules/Orb";
 import styled from "styled-components";
 
 const StyledOrb = styled(Orb)`
-    background: #0B6623;
+    background: #111111;
     background-clip: padding-box;
 `;
 

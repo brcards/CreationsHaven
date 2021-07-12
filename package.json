@@ -31,6 +31,7 @@
     "react-dom": "^17.0.1",
     "react-draggable": "^4.4.3",
     "react-helmet": "^6.1.0",
+    "react-particles-js": "^3.5.3",
     "react-redux": "^7.2.4",
     "styled-components": "^5.3.0"
   },
@@ -40,6 +41,7 @@
     "gatsby-plugin-root-import": "^2.0.6",
     "handlebars": "^4.7.7",
     "jest": "^27.0.5",
-    "mkdirp": "^1.0.4"
+    "mkdirp": "^1.0.4",
+    "tsparticles": "^1.31.1"
   }
 }

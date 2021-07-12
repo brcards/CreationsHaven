@@ -3,9 +3,6 @@ import styled from "styled-components";
 import CardAttribute from "src/modules/Card/CardAttribute";
 
 const Background = styled.div`
-    position: absolute;
-    height: 1.4em;
-    width: 1.4em;
     background: #0018F9;
     border: 1px solid #111111;
     border-radius: 1px;

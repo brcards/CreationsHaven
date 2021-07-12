@@ -6,7 +6,7 @@ import Layers from "src/engine/Layers";
 const StyledHand = styled(Hand)`
     transform: rotate(180deg);
     position: fixed;
-    top: 0;
+    top: -2.5em;
     left: 0;
     right: 0;
     z-index: ${Layers.hands.zIndex};

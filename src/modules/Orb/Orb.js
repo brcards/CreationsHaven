@@ -12,7 +12,6 @@ const Wrapper = styled.div`
                 inset 0 -10px 30px 5px #000000;
     overflow: hidden;
     z-index: 2;
-    ${FlexCenter}
 `;
 
 const Shadow = styled.div`

@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const StyledHand = styled(Hand)`
     position: fixed;
-    bottom: 0;
+    bottom: -1em;
     left: 0;
     right: 0;
 `;
