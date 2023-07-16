@@ -1,4 +1,6 @@
 import {createSlice} from "@reduxjs/toolkit";
+import {CardStates} from "src/modules/Card";
+
 /**
  * State management for the opponents board, rectangle is the bounding rect
  * for the DOM object of the spot. It's stored here so it can be used throughout
@@ -11,7 +13,16 @@ const opponentBoardSlice = createSlice({
             {
                 highlighted: false,
                 rect: {},
-                card: {}
+                card: {
+                    id: 1,
+                    type: "minion",
+                    cost: 3,
+                    attack: 3,
+                    health: 3,
+                    title: "Predators Focus",
+                    text: "Double a minions attack this turn"
+                },
+                state: CardStates.ATTACKED
             },
             {
                 highlighted: false,

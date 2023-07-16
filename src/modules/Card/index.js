@@ -6,6 +6,7 @@ import CardHealth from "src/modules/Card/CardHealth";
 import CardImage from "src/modules/Card/CardImage";
 import CardText from "src/modules/Card/CardText";
 import CardTitle from "src/modules/Card/CardTitle";
+import CardStates from "src/modules/Card/CardStates";
 
 
 export default Card;
@@ -16,5 +17,6 @@ export {
     CardHealth,
     CardCost,
     CardBackground,
-    CardAttack
+    CardAttack,
+    CardStates,
 }

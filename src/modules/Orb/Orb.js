@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from "styled-components";
-import {FlexCenter} from "src/common/Stylings";
 
 const Wrapper = styled.div`
     color: #FFFFFF;
@@ -21,11 +20,6 @@ const Shadow = styled.div`
     height: 100%;
     width: 100%;
     border-radius: 50%;
-`;
-
-const Art = styled.img`
-    display: block;
-    height: 100%;
 `;
 
 const Orb = ({children, ...rest}) => {

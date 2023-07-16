@@ -1,12 +1,11 @@
 import React from 'react';
 import OpponentHand from "src/modules/OpponentHand/OpponentHand";
 import OpponentCard from "src/modules/OpponentCard";
-import {useDispatch, useSelector} from "react-redux";
+import {useSelector} from "react-redux";
 
 const selectCardsInHand = (state) => state.opponentHand.cards;
 
 const OpponentHandContainer = ({...rest}) => {
-    const dispatch = useDispatch();
     const cardsInHand = useSelector(selectCardsInHand);
 
     return (

@@ -13,7 +13,7 @@ const PlayerBoardSlotContainer = ({children, index, ...rest}) => {
             index: index,
             rect: slotRef.current.getBoundingClientRect()
         }));
-    }, [slotRef]);
+    }, [slotRef, dispatch, index]);
 
     return (
         <BoardSlot ref={slotRef} {...rest}>

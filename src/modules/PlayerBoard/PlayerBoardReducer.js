@@ -1,5 +1,6 @@
 import {createSlice} from "@reduxjs/toolkit";
 import {PLAY_PLAYER_MINION} from "src/common/ActionTypes";
+import {CardStates} from "src/modules/Card";
 
 /**
  * State management for the players hand, rectangle is the bounding rect
@@ -73,6 +74,7 @@ const playerBoardSlice = createSlice({
         [PLAY_PLAYER_MINION]: (state, action) => {
             state.slots[action.payload.slotIndex].card = action.payload.card;
             state.slots[action.payload.slotIndex].highlighted = false;
+            state.slots[action.payload.slotIndex].state = CardStates.READY;
             return state;
         }
     },
